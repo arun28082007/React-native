@@ -6,9 +6,10 @@ export default function HomeScreen() {
     const [count, setCount] = useState(0);
     return (
         <View style={styles.container}>
-        <Text>You clicked {count} times</Text>
+            <Text>You clicked {count} times</Text>
             <Button onPress={() => setCount(count + 1)} title="Click me!" />
-            <Link href="/details">View details</Link>
+            <Link href="/details">View detail page</Link>
+            <Link href="/arun">Open arun page</Link>
         </View>
     );
 }

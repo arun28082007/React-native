@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package" : "com.ardev.test",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -37,6 +38,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "537bdf56-5a18-4c9c-a85f-20542e47b174"
+      }
+    },
+    "owner": "arun_anand"
   }
 }
