@@ -1,20 +1,48 @@
-import { View, Text, StyleSheet } from "react-native";
+import * as React from 'react';
+import { FAB, Portal, PaperProvider } from 'react-native-paper';
 
-export default function DetailsScreen() {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.mytext}>Detailed Page</Text>
-        </View>
-    );  
-}
+const MyComponent = () => {
+  const [state, setState] = React.useState({ open: false });
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    mytext: {
-        
-    }
-});
+  const onStateChange = ({ open }) => setState({ open });
+
+  const { open } = state;
+
+  return (
+    <PaperProvider>
+      <Portal>
+        <FAB.Group
+          open={open}
+          visible
+          icon={open ? 'calendar-today' : 'plus'}
+          actions={[
+            { icon: 'plus', onPress: () => console.log('Pressed add') },
+            {
+              icon: 'star',
+              label: 'Star',
+              onPress: () => console.log('Pressed star'),
+            },
+            {
+              icon: 'email',
+              label: 'Email',
+              onPress: () => console.log('Pressed email'),
+            },
+            {
+              icon: 'bell',
+              label: 'Remind',
+              onPress: () => console.log('Pressed notifications'),
+            },
+          ]}
+          onStateChange={onStateChange}
+          onPress={() => {
+            if (open) {
+              // do something if the speed dial is open
+            }
+          }}
+        />
+      </Portal>
+    </PaperProvider>
+  );
+};
+
+export default MyComponent;

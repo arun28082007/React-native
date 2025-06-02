@@ -15,7 +15,7 @@ export default function HomeScreen() {
                 Click me!
             </Button>
 
-            <Button
+            <Button mode="contained-tonal"
                 onPress={() => {
                     router.push("/details");
                 }}
@@ -23,21 +23,21 @@ export default function HomeScreen() {
                 Details page
             </Button>
 
-            <Button
+            <Button mode="elevated"
                 onPress={() => {
                     router.push("/arun");
                 }}
             >
                 Arun page
             </Button>
-            <Button
+            <Button 
                 icon="home"
                 mode="contained"
                 onPress={() => console.log("Pressed")}
             >
                 Press me
             </Button>
-            <Button
+            <Button mode="outlined"
                 onPress={() => {
                     router.push("/ani");
                 }}
@@ -52,8 +52,8 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         alignItems: "center",
-        padding: 16
+        margin: 20
     }
 });
