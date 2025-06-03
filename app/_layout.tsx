@@ -6,6 +6,7 @@ import {
     Provider as PaperProvider
 } from "react-native-paper";
 
+
 const theme = {
     ...DefaultTheme,
     colors: {
@@ -72,6 +73,7 @@ export default function RootLayout() {
                 <Stack.Screen name="details" />
                 <Stack.Screen name="arun" />
                 <Stack.Screen name="ani" />
+                <Stack.Screen name="ui" />
             </Stack>
         </PaperProvider>
     );

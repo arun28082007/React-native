@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { FAB, Portal, PaperProvider } from 'react-native-paper';
+import { View } from 'react-native';
 
 const MyComponent = () => {
   const [state, setState] = React.useState({ open: false });
@@ -7,16 +8,20 @@ const MyComponent = () => {
   const onStateChange = ({ open }) => setState({ open });
 
   const { open } = state;
-
+  
   return (
     <PaperProvider>
+    
       <Portal>
         <FAB.Group
           open={open}
           visible
-          icon={open ? 'calendar-today' : 'plus'}
+          icon={open ? 'google' : 'plus'}
           actions={[
-            { icon: 'plus', onPress: () => console.log('Pressed add') },
+            {
+              icon: 'plus', 
+              onPress: () => console.log('Pressed add') 
+            },
             {
               icon: 'star',
               label: 'Star',
@@ -27,6 +32,7 @@ const MyComponent = () => {
               label: 'Email',
               onPress: () => console.log('Pressed email'),
             },
+            
             {
               icon: 'bell',
               label: 'Remind',
@@ -36,12 +42,14 @@ const MyComponent = () => {
           onStateChange={onStateChange}
           onPress={() => {
             if (open) {
+            console.log("onPress button ")
               // do something if the speed dial is open
             }
           }}
         />
       </Portal>
     </PaperProvider>
+    
   );
 };
 

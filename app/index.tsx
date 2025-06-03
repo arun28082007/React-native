@@ -11,38 +11,52 @@ export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <Text variant="headlineMedium">You clicked {count} times</Text>
-            <Button mode="contained" onPress={() => setCount(count + 1)}>
-                Click me!
+            <Button
+                icon="plus"        
+                mode="contained" 
+                onPress={() => setCount(count + 1)}
+            >
+                Click me! to increase
             </Button>
-
-            <Button mode="contained-tonal"
+            <Button
+                mode="contained-tonal"
                 onPress={() => {
                     router.push("/details");
                 }}
             >
-                Details page
+                Fab page
             </Button>
 
-            <Button mode="elevated"
+            <Button
+                mode="elevated"
                 onPress={() => {
                     router.push("/arun");
                 }}
             >
-                Arun page
+                Tab page
             </Button>
-            <Button 
-                icon="home"
+            <Button
+                icon="google"
                 mode="contained"
                 onPress={() => console.log("Pressed")}
             >
-                Press me
+                Press me to console log
             </Button>
-            <Button mode="outlined"
+            <Button
+                mode="outlined"
                 onPress={() => {
                     router.push("/ani");
                 }}
             >
                 Animation page
+            </Button>
+            <Button
+                mode="contained"
+                onPress={() => {
+                    router.push("/ui");
+                }}
+            >
+            Ui Design
             </Button>
         </View>
     );
