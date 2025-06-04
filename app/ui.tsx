@@ -1,42 +1,66 @@
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import { useState } from 'react'
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { useState } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Ui(){
-    
-    const [count,setCount] = useState(0);
-    
+//const colorScheme = useColorScheme();
+//const isDarkMode = colorScheme === 'dark';
+
+export default function Ui() {
+    const [count, setCount] = useState(0);
+
     return (
-        <View style={style.container}>
-        <TouchableOpacity 
-            style={style.button}
-            onPress= {()=> setCount(count+1)}
-            >
-            <Text style={style.mytext}>Hello arun! {count}</Text>
-        </TouchableOpacity>
-        </View>
-    ) 
+        <SafeAreaView style={style.container}>
+            <View style={style.header}>
+                <Text style={style.headerText}>ArDev</Text>
+            </View>
+
+            <View style={style.data}>
+                <TouchableOpacity
+                    style={style.button}
+                    onPress={() => setCount(count + 1)}
+                >
+                    <Text style={style.mytext}>Hello arun! {count}</Text>
+                </TouchableOpacity>
+            </View>
+        </SafeAreaView>
+    );
 }
 
 const style = StyleSheet.create({
-   container:{
-       flex:1,
-       justifyContent:"center",
-       alignItems:"center"
-   },
-   
-   button:{
-       backgroundColor:"#ff7f50",
-       width:120,
-       height:'contain',
-       borderRadius:20,
-       padding:10,
-       elevation:10,
-       
-   },
-   
-   mytext:{
-       textAlign:'center',
-       color:"#eee"
-   }
-   
-})
+    container: {
+        flex: 1
+    },
+
+    data: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
+        //backgroundColor: isDarkMode ? 'black' : 'white',
+    },
+
+    button: {
+        backgroundColor: "#ff7f50",
+        width: 120,
+        height: 50,
+        borderRadius: 15,
+        padding: 10,
+        elevation: 20
+    },
+
+    mytext: {
+        textAlign: "center",
+        color: "#eee"
+    },
+
+    header: {
+        height: 50,
+        backgroundColor: "royalblue"
+    },
+
+    headerText: {
+        paddingTop: 5,
+        paddingLeft: 30,
+        color: "white",
+        fontSize: 30
+    }
+});

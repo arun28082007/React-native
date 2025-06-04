@@ -11,7 +11,6 @@ const MyComponent = () => {
   
   return (
     <PaperProvider>
-    
       <Portal>
         <FAB.Group
           open={open}
