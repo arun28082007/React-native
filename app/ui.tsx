@@ -7,7 +7,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Ui() {
     const [count, setCount] = useState(0);
-
     return (
         <SafeAreaView style={style.container}>
             <View style={style.header}>
