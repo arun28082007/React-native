@@ -1,0 +1,64 @@
+[33mcommit b37922dc7b5d7fd8f112e8b6adfb43a75631f382[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: arun28082007 <arunanand0807@gmail.com>
+Date:   Wed Jun 4 23:10:18 2025 +0530
+
+     Changes to be committed:
+            modified:   app/ui.tsx
+
+[33mcommit 0caf6fb15e24b6cd8aafddc77491e2adf94d63ad[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Wed Jun 4 13:29:52 2025 +0530
+
+     Changes to be committed:
+            modified:   app/details.tsx
+            modified:   app/ui.tsx
+
+[33mcommit dee8d2314377e154d75ca34fbd943a94939459b2[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Tue Jun 3 16:53:08 2025 +0530
+
+     Changes to be committed:
+            new file:   .vscode/tasks.json
+            modified:   app/_layout.tsx
+            modified:   app/arun.tsx
+            modified:   app/details.tsx
+            modified:   app/index.tsx
+            new file:   app/ui.tsx
+
+[33mcommit 5ff05683cefbd4e6bad805e0d4d9fb8845fa25e5[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Mon Jun 2 08:35:42 2025 +0530
+
+    update
+
+[33mcommit 79cd77b3e1e30a72d500ae3ad83aeaa8b901f406[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Sun Jun 1 17:17:04 2025 +0530
+
+    added new animation page
+
+[33mcommit 020094fdb29aa61ef326a28c52f1e28786f46d0c[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Sat May 31 22:55:29 2025 +0530
+
+    some changes
+
+[33mcommit 123311cda3d7632405d77a51f726de0963567c78[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Sat May 31 22:52:08 2025 +0530
+
+     Changes to be committed:
+            modified:   app/_layout.tsx
+            new file:   app/index.tsx
+
+[33mcommit 15af5324cadabe4a4dd033debbb2d61a05945b94[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Sat May 31 12:30:09 2025 +0530
+
+    first commit
+
+[33mcommit 8f695fa80e6f821114f8cffb581feddd7f11cf14[m
+Author: arunanand0807 <arunanand0807@gmail.com>
+Date:   Sat May 31 12:26:54 2025 +0530
+
+    first commit
