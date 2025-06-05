@@ -170,7 +170,7 @@ const createStyles = (theme) =>
       alignItems: 'center',
       justifyContent: 'center',
       margin: 4,
-      borderRadius: 12,
+      borderRadius: 32,
       paddingVertical: 18,
     },
     operator: {
