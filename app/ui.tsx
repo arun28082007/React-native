@@ -128,7 +128,7 @@ const createStyles = (theme) =>
     container: {
       flex: 1,
       backgroundColor: theme.bg,
-      paddingTop: 40,
+      paddingTop: 25,
     },
     toggleRow: {
       flexDirection: 'row',
@@ -143,7 +143,7 @@ const createStyles = (theme) =>
     },
     display: {
       backgroundColor: theme.displayBg,
-      padding: 20,
+      paddingBottom: 50,
       alignItems: 'flex-end',
     },
     expression: {
