@@ -17,13 +17,13 @@ export default function arun() {
         <Appbar.Action icon="calendar" onPress={() => {}} />
         <Appbar.Action icon="magnify" onPress={() => {}} />
       </Appbar.Header>
-      <Text>Arun</Text>
+      <Text style={styles.mytext}>Arun</Text>
       <Button
         onPress={() => {
           console.log(arun);
         }}
       >
-        arun
+        Arun
       </Button>
     </View>
   );
@@ -35,4 +35,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  mytext:{
+    width:100,
+    height:48,
+    color:"teal"
+  }
 });
