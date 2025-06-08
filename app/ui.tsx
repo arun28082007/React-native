@@ -1,13 +1,10 @@
-// app/index.js
-import { useRouter } from "expo-router";
-import React, { useState } from "react";
+// app/ui.tsx
+import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Text } from "react-native-paper";
 
-const router = useRouter();
 
 export default function HomeScreen() {
-    const [count, setCount] = useState(0);
     return (
         <View style={styles.container}>
             <View style={styles.top}>
@@ -15,7 +12,7 @@ export default function HomeScreen() {
             </View>
             <View style={styles.bottom}>
                 <View style={styles.main1}>
-                    <Text style={color="white"}>Main 1</Text>
+                    <Text style={styles.main1Text}>Main 1</Text>
                 </View>
                 <View style={styles.main2}>
                     <Text>Main 2</Text>
@@ -39,7 +36,7 @@ const styles = StyleSheet.create({
     bottom:{
         flex:2,
         flexDirection:'row', 
-        alignItems: "start",
+        alignItems: "flex-start",
     },
     main1:{
         backgroundColor:"teal",
@@ -56,5 +53,8 @@ const styles = StyleSheet.create({
     },
     header:{
         fontSize:50,
+    },
+    main1Text: {
+        color: "white",
     }
 });
