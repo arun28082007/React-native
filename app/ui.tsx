@@ -1,60 +1,18 @@
-// app/ui.tsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { Text } from "react-native-paper";
-
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import Calculator from './calculator';
 
 export default function HomeScreen() {
-    return (
-        <View style={styles.container}>
-            <View style={styles.top}>
-                <Text style={styles.header}>My Notes</Text>
-            </View>
-            <View style={styles.bottom}>
-                <View style={styles.main1}>
-                    <Text style={styles.main1Text}>Main 1</Text>
-                </View>
-                <View style={styles.main2}>
-                    <Text>Main 2</Text>
-                </View>
-            </View>
-        </View>
-    );
+  return (
+    <Calculator />
+  );
 }
 
-// Styles
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "space-evenly",
-        alignItems: "center",
-        paddingTop:20,
-    },
-    top:{
-        height:80,   
-    },
-    bottom:{
-        flex:2,
-        flexDirection:'row', 
-        alignItems: "flex-start",
-    },
-    main1:{
-        backgroundColor:"teal",
-        width:150,
-        height:250,
-        borderRadius:20,
-        marginRight:20
-    },
-    main2:{
-        backgroundColor:"royalblue",
-        width:150,
-        height:250,
-        borderRadius:20,   
-    },
-    header:{
-        fontSize:50,
-    },
-    main1Text: {
-        color: "white",
-    }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#121212',
+  },
 });
